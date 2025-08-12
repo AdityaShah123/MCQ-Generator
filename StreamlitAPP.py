@@ -10,7 +10,10 @@ from langchain.callbacks import get_openai_callback
 import streamlit as st
 
 
-with open("C:\\All Data\\Studies\\GenAi\\MCQ Generator\\Response.json", "r") as file:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+json_path = os.path.join(BASE_DIR, "Response.json")
+
+with open(json_path, "r") as file:
     RESPONSE_JSON = json.load(file)
 
 # st.write("Streamlit version:", st.__version__)
