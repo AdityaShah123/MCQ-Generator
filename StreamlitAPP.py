@@ -10,7 +10,7 @@ from langchain.callbacks import get_openai_callback
 import streamlit as st
 
 
-with open('C:\All Data\Studies\GenAi\MCQ Generator\Response.json','r') as file:
+with open("C:\\All Data\\Studies\\GenAi\\MCQ Generator\\Response.json", "r") as file:
     RESPONSE_JSON = json.load(file)
 
 # st.write("Streamlit version:", st.__version__)
